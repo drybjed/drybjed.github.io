@@ -1,0 +1,47 @@
+html {
+  font-size: 17px;
+  font-family: "Droid Sans Condensed", sans-serif;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+#content {
+  margin: 0 auto;
+  width: 600px;
+  padding: 2rem;
+}
+
+@media (max-width: 900px) {
+  #content {
+    width: 70%;
+    padding: 1.5rem;
+  }
+}
+
+h1 {
+  padding-bottom: 0.05em;
+  border-bottom: 2px solid #0092DF;
+}
+
+a {
+  text-decoration: none;
+  color: #0092DF;
+}
+
+pre {
+  font-family: "Inconsolata", monospace;
+  font-size: 90%;
+  color: #333;
+  padding-left: 2rem;
+}
+
+@media (max-width: 500px) {
+  pre { padding-left: 0rem; }
+}
+
