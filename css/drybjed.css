@@ -36,6 +36,14 @@ html {
   }
 }
 
+@media (max-width: 500px) {
+  #content {
+    width: 85%;
+    padding: 0.5rem;
+    margin-left: 1em;
+  }
+}
+
 h1 {
   padding-bottom: 0.05em;
   border-bottom: 2px solid #0092DF;
