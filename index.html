@@ -1,37 +1,143 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="en">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="41B13D37B3869286029B5435CC9236FC8049EE10">
     <meta name="copyright" content="drybjed.net">
     <meta name="description" content="Personal home page of Maciej Delmanowski">
     <meta name="keywords" content="personal home page">
+
     <link rel="openid.server"   href="https://www.clavid.com/provider/openid">
     <link rel="openid.delegate" href="http://drybjed.clavid.com">
+
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata|Droid+Sans+Condensed">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/drybjed.css" media="screen">
-    <title>Maciej Delmanowski</title>
+    <link rel="stylesheet" type="text/css" href="css/blinking_cursor.css" media="screen">
+
+    <title>drybjed's home page</title>
+
   </head>
+
+  <!-- Oh, hello there. Nice for you to stop by. Yup, this website is all done by hand, in vim. -->
+
   <body>
+
     <div id="content">
 
-    <h1>Maciej Delmanowski</h1>
+      <img id="avatar" src="drybjed.jpg" />
 
-    <p>Linux sysadmin, Ansible guru.</p>
+      <h1>drybjed's home page</h1>
 
-    <p>Contact me: <em><a href="mailto:drybjed@gmail.com">root at drybjed dot net</a></em></p>
+      <p>Hi, I'm Maciej Delmanowski. I work as a system administrator, from
+      time to time dabbling in a larger field of IT Operations using various
+      Free Software and Open Source tools.</p>
 
-    <p>Download my <a href="/0x2DCCF53E9BC74BEC.asc">GPG public key</a> from this website or through a keyserver:</p>
+      <p>I spend most of my time in a Linux terminal emulator, therefore this
+      website doesn't have any cool formatting, but at least is presentable
+      in <code>lynx</code>.</p>
 
-    <pre>gpg --recv-keys '2706 7A91 D620 EE91 D503 09D9 2DCC F53E 9BC7 4BEC'</pre>
+      <h2>Projects I'm involved in</h2>
 
-    <p>Give me <a href="/drybjed_ssh.pub">access to your host</a> through SSH.</p>
+      <p>Here's a list of projects I'm currently working on or participated in:</p>
 
-    <p>Links: <a href="https://github.com/drybjed/">GitHub</a>, <a href="https://twitter.com/drybjed">Twitter</a>.</p>
+      <dl>
 
-  </div>
+        <dt><a href="https://github.com/debops/debops/">DebOps</a></dt>
+        <dd>My main project at the moment. If you work with Debian or Ubuntu
+        hosts and want to have an easier way to manage them, DebOps is for
+        you.</dd>
+
+        <dt><a href="https://github.com/ansible/ansible/">Ansible</a></dt>
+        <dd>The main tool the DebOps project is based on. I'm mostly report
+        bugs that I find while working on my project, and from time to time
+        I add some odd feature.</dd>
+
+        <dt><a href="http://fvwm-crystal.sourceforge.net">FVWM-Crystal</a></dt>
+        <dd>This is a set of themes for the <a href="http://fvwm.org/">FVWM</a>
+        window manager designed around good keyboard usage and transparency.
+        I started it around 2003 and passed it on to Dominique Michel around
+        2007. Since then I switched to tiling window managers - currently I'm
+        using <a href="https://i3wm.org/">i3wm</a> on my workstations.</dd>
+
+      </dl>
+
+      <h2>My OpenPGP key</h2>
+
+      <p>I'm using OpenPGP keys to sign the code I'm publishing, e-mails, my
+      <a href="https://github.com/drybjed.keys">SSH key</a> is derived from it,
+      and of course I encrypt various data using this key. If you want, you can
+      send an encrypted e-mail message to me, so that only I would be able to
+      read it.</p>
+
+      <p>You can download my OpenPGP public key from the public keyserver
+      network using the <code>gnupg</code> application:</p>
+
+      <pre>
+      gpg --keyserver hkp://pool.sks-keyservers.net \
+          --recv-keys '2706 7A91 D620 EE91 D503 09D9 2DCC F53E 9BC7 4BEC'</pre>
+
+      <p>You can also <a href="https://keybase.io/drybjed">verify my OpenPGP identity</a>
+      against some of my online identities using <a href="https://keybase.io/">Keybase</a>.
+      This does not have the same strength as meeting me in person and
+      exchanging key fingerprints, but should be sufficient to authenticate
+      some of my online GPG activity.</p>
+
+      <h2>Contact me</h2>
+
+      <p>I'm all over the Internet, usually by the nickname <em>drybjed</em>.
+      At the moment my preferred methods of contact are, in no particular order:</p>
+
+      <dl>
+
+        <dt>E-mail: <em><a href="mailto:drybjed@drybjed.net">drybjed@drybjed.net</a></em></dt>
+        <dd>This is a very old school, bare bones social network from times
+        past. Plain text e-mails work like postcards, therefore treat them as
+        such. You can encrypt messages sent to this e-mail address using my
+        OpenPGP key.</dd>
+
+        <dt>IRC: <em>drybjed</em> on the <a href="https://freenode.net/">freenode</a> network</dt>
+        <dd>A real-time chat over topical channels. I'm usually hanging out on
+        <em>#debops</em>, <em>#ansible</em>, or you can just
+        <code>/query</code> directly. I'm offline from time to time, therefore
+        if I don't respond for an hour or so, send me an e-mail instead.</dd>
+
+        <dt>Google: <em><a href="mailto:drybjed@gmail.com">drybjed@gmail.com</a></em></dt>
+        <dd>I have a Google account with various services like GMail, Hangouts,
+        etc. If you use these, you can contact me that way.</dd>
+
+      </dl>
+
+      <h2>Donate BTC</h2>
+
+      <p>If you like my projects, you can send some bitcoins my way to show
+      your gratitude. My bitcoin address is:</p>
+
+      <pre>
+      1PGB3YmtEsmy8eK8q616pJC7FPLs7s8GnJ</pre>
+
+      <p>I'll most likely spend them on more coffee and snacks to fuel my Open
+      Source activities.</p>
+
+      <pre>drybjed@<span id="host">tycho</span>:~$ <span class="blinking-cursor">&block;</span></pre>
+
+    </div>
+
+    <script type="text/javascript">
+      var myHosts = ['helios', 'tycho', 'edi', 'cornell', 'icarus'];
+      var randomHost = myHosts[Math.floor(Math.random() * myHosts.length)];
+
+      function showhost(){
+          document.getElementById('host').innerHTML = randomHost;
+      }
+
+      showhost();
+    </script>
+
   </body>
+
 </html>
