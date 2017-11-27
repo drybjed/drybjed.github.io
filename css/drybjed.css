@@ -19,9 +19,14 @@ html {
 
 #content {
   margin: 0 auto;
-  margin-left: 3em;
   width: 600px;
   padding: 2rem;
+}
+
+@media (max-width: 1000px) {
+  #content {
+    margin-left: 3em;
+  }
 }
 
 @media (max-width: 900px) {
